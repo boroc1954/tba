@@ -5,7 +5,7 @@ import time
 import json
 import argparse
 
-def login(a, username, password):
+def login(a, eltorototalbattle@gmail.com, Finkt20Av@1954):
     if not a.await_samples("next", 10):
         return False
     a.click(30, -180)
@@ -14,10 +14,10 @@ def login(a, username, password):
         return False
     a.click()
     time.sleep(0.1)
-    a.write(username)
+    a.write(eltorototalbattle@gmail.com)
     a.tab()
     time.sleep(0.1)
-    a.write(password)
+    a.write(Finkt20Av@1954)
     time.sleep(0.1)
     if not a.await_samples("login_finish", 2):
         return False
@@ -42,11 +42,11 @@ args = parser.parse_args()
 
 with open(args.credentials) as f:
     credentials = json.load(f)
-    username = credentials["username"]
-    password = credentials["password"]
+    username = credentials["eltorototalbattle@gmail.com"]
+    password = credentials["Finkt20Av@1954"]
 
 a = Automator()
-while not login(a, username, password):
+while not login(a, eltorototalbattle@gmail.com, Finkt20Av@1954):
     a.refresh()
     time.sleep(1)
 time.sleep(3)
